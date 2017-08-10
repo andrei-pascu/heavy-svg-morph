@@ -1,0 +1,83 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  overflow: hidden;
+  image-rendering: pixelated;
+  background-size: cover;
+}
+#legendary {
+  /*margin: -5vh 0 0 -9vh;*/
+  height: 100vh;
+  width: 180vh;
+  stroke-width: 1;
+  stroke: #16841c;
+  /*fill: #111;*/
+  fill: rgba(255,0,0,0.5);
+
+
+  /*filter: hue-rotate(90deg);*/
+
+
+  /*transition: 2s;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;*/
+}
+#legend {
+transition: filter 2s;
+  height: 100vh;
+  width: 180vh;
+}
+#toDo {
+  width: 100%;
+  height: 100vh;
+  transition: 0.5s;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  pointer-events: none;
+}
+#toDo p {
+  color: white;
+
+  transition: 0.5s;
+}
+#loader-c {
+  pointer-events: none;
+  width: 100vw;
+  height: 5vh;
+  background-color: gray;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  overflow: hidden;
+}
+#loader {
+  transition: 18.3s linear;
+  transform: translateX(-100vw);
+  pointer-events: none;
+  width: 100vw;
+  height: 5vh;
+  background-color: rgba(0,255,0,0.4);
+}
